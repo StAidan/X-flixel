@@ -262,7 +262,7 @@ namespace org.flixel
                     if (_rects[cri] != Rectangle.Empty)
                     {
                         spriteBatch.Draw(_tileBitmap,
-                            new Rectangle((ix * _tileWidth) + (int)Math.Floor(FlxG.scroll.X), (iy * _tileHeight) + (int)Math.Floor(FlxG.scroll.Y), _tileWidth, _tileHeight),
+                            new Rectangle((ix * _tileWidth) + (int)Math.Floor(FlxG.scroll.X * scrollFactor.X), (iy * _tileHeight) + (int)Math.Floor(FlxG.scroll.Y * scrollFactor.Y), _tileWidth, _tileHeight),
                             _rects[iy * widthInTiles + ix],
                             Color.White);
                     }
